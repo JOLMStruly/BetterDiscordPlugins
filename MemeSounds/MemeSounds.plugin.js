@@ -138,7 +138,7 @@ module.exports = (() => {
 						{re: /what if/gmi, file: "vsauce.mp3", duration: 7000},
 						{re: /yahoo/gmi, file: "yahoo.mp3", duration: 930},
 						{re: /yip?pee/gmi, file: "yippee.mp3", duration: 1000}
-						{re: /yip?pee/gmi, file: "darktoe.mp3", duration: 5300}
+						{re: /toe/gmi, file: "darktoe.mp3", duration: 5300}
 					];
 
 					let lastMessageID = null;
