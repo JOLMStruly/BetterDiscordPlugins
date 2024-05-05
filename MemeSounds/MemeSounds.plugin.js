@@ -1,22 +1,10 @@
-/**
- * @name MemeSounds
- * @version 1.0.0
- * @description Plays Memetastic sounds depending on what is being sent in chat. This was heavily inspired by the idea of Metalloriff's bruh plugin so please go check him out!
- * @invite SsTkJAP3SE
- * @author Lonk1639
- * @authorId 557388558017495046
- * @authorLink https://github.com/Lonk12/
- * @source https://github.com/Lonk12/BetterDiscordPlugins/blob/main/MemeSounds/MemeSounds.plugin.js
- * @updateUrl https://raw.githubusercontent.com/Lonk12/BetterDiscordPlugins/main/MemeSounds/MemeSounds.plugin.js
- */
-
 module.exports = (() => {
 	/* Configuration */
 	const config = {
 		info: {
-			name: "MemeSounds",
+			name: "MemeSoundsJOLMS",
 			authors: [{
-				name: "Lonk1639",
+				name: "JOLMS",
 				discord_id: "557388558017495046"
 			}],
 			version: "1.0.0",
@@ -62,6 +50,7 @@ module.exports = (() => {
 				{ id: "vsauce", name: "Vsauce", type: "switch", value: false },
 				{ id: "yahoo", name: "Yahoo!", type: "switch", value: true },
 				{ id: "yippee", name: "Yippee!", type: "switch", value: true }
+				{ id: "darktoe", name: "Dark Toe", type: "switch", value: true }
 			]
 		}],
 		/* Change Log */
@@ -149,6 +138,7 @@ module.exports = (() => {
 						{re: /what if/gmi, file: "vsauce.mp3", duration: 7000},
 						{re: /yahoo/gmi, file: "yahoo.mp3", duration: 930},
 						{re: /yip?pee/gmi, file: "yippee.mp3", duration: 1000}
+						{re: /yip?pee/gmi, file: "darktoe.mp3", duration: 1000}
 					];
 
 					let lastMessageID = null;
