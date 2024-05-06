@@ -8,8 +8,8 @@
         }],
         "version": "1.0.0",
         "description": "Plays Memetastic sounds depending on what is being sent in chat. This was heavily inspired by the idea of Metalloriff's bruh plugin so please go check him out!",
-        "github": "https://github.com/Lonk12/BetterDiscordPlugins/blob/main/MemeSounds/MemeSounds.plugin.js",
-        "github_raw": "https://raw.githubusercontent.com/Lonk12/BetterDiscordPlugins/main/MemeSounds/MemeSounds.plugin.js"
+        "github": "https://github.com/JOLMStruly/BetterDiscordPlugins/tree/main/MemeSounds/MemeSoundsJOLMS.plugin.js",
+        "github_raw": "https://raw.githubusercontent.com/JOLMStruly/BetterDiscordPlugins/tree/main/MemeSounds/MemeSoundsJOLMS.plugin.js"
     },
     "changelog": [
         {
@@ -53,5 +53,5 @@
             ]
         }
     ],
-    "main": "MemeSounds.index.js"
+    "main": "MemeSoundsJOLMS.index.js"
 }
