@@ -143,7 +143,7 @@ module.exports = (() => {
 
 					let lastMessageID = null;
 
-					return class MemeSounds extends Plugin {
+					return class MemeSoundsJOLMS extends Plugin {
 						constructor() {
 							super();
 						}
