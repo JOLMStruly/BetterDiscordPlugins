@@ -5,11 +5,11 @@ module.exports = (() => {
 			name: "MemeSoundsJOLMS",
 			authors: [{
 				name: "JOLMS",
-				discord_id: "557388558017495046"
+				discord_id: "400470429719855105"
 			}],
 			version: "1.0.0",
 			description: "Plays Memetastic sounds when certain words are sent in chat. This plugin was heavily inspired by Metalloriff's bruh plugin so please go check him out!",
-			github: "https://github.com/Lonk12/BetterDiscordPlugins/blob/main/MemeSounds/MemeSounds.plugin.js",
+			github: "https://github.com/JOLMStruly/BetterDiscordPlugins/tree/main/MemeSounds/MemeSounds.plugin.js",
 			github_raw: "https://raw.githubusercontent.com/Lonk12/BetterDiscordPlugins/main/MemeSounds/MemeSounds.plugin.js"
 		},
 		/* Settings */
