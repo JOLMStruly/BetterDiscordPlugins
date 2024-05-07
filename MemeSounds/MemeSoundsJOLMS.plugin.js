@@ -20,7 +20,7 @@ module.exports = (() => {
 				discord_id: "400470429719855105"
 			}],
 			version: "1.0.0",
-			description: "Plays Memetastic sounds when certain words are sent in chat. This plugin was heavily inspired by Metalloriff's bruh plugin so please go check him out!",
+			description: "Compliments chat with sounds. A fork of Lonk12's Meme sounds and inspired by Metalloriff's bruh plugin",
 			github: "https://github.com/JOLMStruly/BetterDiscordPlugins/tree/main/MemeSounds/MemeSounds.plugin.js",
 			github_raw: "https://raw.githubusercontent.com/JOLMStruly/BetterDiscordPlugins/tree/main/MemeSounds/MemeSoundsJOLMS.plugin.js"
 		},
@@ -61,53 +61,18 @@ module.exports = (() => {
 				{ id: "vineboom", name: "Vine Boom", type: "switch", value: true },
 				{ id: "vsauce", name: "Vsauce", type: "switch", value: false },
 				{ id: "yahoo", name: "Yahoo!", type: "switch", value: true },
-				{ id: "yippee", name: "Yippee!", type: "switch", value: true },
+				{ id: "yip?pee", name: "Yippee!", type: "switch", value: true },
 				{ id: "darktoe", name: "Dark Toe", type: "switch", value: true }
 			]
 		}],
 		/* Change Log */
 		changelog: [{
-			title: "New Sounds!?",
+			title: "How do you even code?",
 			items: [
-				"Mmm-chezburger from Roblox credits to **0x00sec**.",
-				"Mario saying `yippee` credits to **0x00sec**.",
-				"The hamburger meme.",
-				"Mario saying YAHOO!, okiedokie, and hello in Mario64.",
-				"Ness saying 'ok' from super smash bros.",
-				"The most iconic part of 'moonmen' from basically every vsauce video.",
-				"**NOTE: this plays when someone says 'what if' and is currently DISABLED by default!**"
+				"IDK what I'm doing why did you install this?"
 			]
-		},
-		{
-			title: "Bugs Squashed",
-			type: "fixed",
-			items: [
-				"**Got off my ass.**",
-				"The plugin."
-			]
-		},
-		{
-            title: "Improvements",
-            type: "improved",
-            items: [
-				"You can now toggle individual sounds on and off! Credits to **0x00sec** on discord.",
-				"Modified some sound lengths and added sound file metadata.",
-                "Code readability.",
-                "The plugin."
-            ]
-        },
-        {
-            title: "On-Going",
-            type: "progress",
-            items: [
-                "Stuff is *totally* going on over here.",
-                "Graduating highschool.",
-				"General life.",
-                "The plugin."
-            ]
         }]
 	};
-
 	/* Library Stuff */
 	return !global.ZeresPluginLibrary
 		? class {
@@ -184,7 +149,7 @@ module.exports = (() => {
 
 								for (let sound of [...queue.entries()].sort((a, b) => a[0] - b[0])) {
 									if (this.settings.toggle[sound[1].file.replace(/\..+$/, "")]) {
-										let audio = new Audio("https://github.com/JOLMStruly/BetterDiscordPlugins/tree/main/MemeSounds/Sounds/" + sound[1].file);
+										let audio = new Audio("https://github.com/JOLMStruly/BetterDiscordPlugins/raw/main/MemeSounds/Sounds/" + sound[1].file);
 										audio.volume = this.settings.setting.volume;
 										audio.play();
 										await new Promise(r => setTimeout(r, sound[1].duration + this.settings.setting.delay));
